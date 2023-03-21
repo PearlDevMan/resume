@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Alexander | Resume',
+  description: "Resume about Alexander Davis as A Good SAP Engineer",
 };
 
 /**
@@ -69,18 +69,17 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Alexander Davis.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a Victoria based <strong className="text-stone-100">SAP Engineer</strong>, currently working
+        at <strong className="text-stone-100">Advanced Fixtures Inc</strong> helping build a SAP CRM, SAP HANA, S/3 and Security.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me training in <strong className="text-stone-100">Swimming</strong>,
+        or exploring beautiful{' '}
+        <strong className="text-stone-100">famous mountains</strong>.
       </p>
     </>
   ),
@@ -108,11 +107,11 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: '	Omaha,	New Hampshire', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+    {label: 'Nationality', text: 'United State / Chinese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Swimming, Karate, Climbing', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Advanced Fixtures Inc', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
   ],
 };
@@ -129,62 +128,66 @@ export const skills: SkillGroup[] = [
         level: 10,
       },
       {
-        name: 'French',
+        name: 'Chinese',
         level: 4,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Japanes',
+        level: 2,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'SAP Engineer',
     skills: [
       {
-        name: 'React',
+        name: 'CRM',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'HANA',
         level: 7,
       },
       {
-        name: 'GraphQL',
+        name: 'Finance',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'System Engineer',
     skills: [
       {
-        name: 'Node.js',
+        name: 'System Administration',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'System Security',
+        level: 6,
       },
       {
-        name: 'Golang',
+        name: 'System Configuration',
         level: 4,
       },
+      {
+        name: 'Enterprise Architecture',
+        level: 4,
+      }
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Web Developer',
     skills: [
       {
-        name: 'React Native',
+        name: 'Back-End',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Front-End',
+        level: 5,
       },
       {
-        name: 'Swift',
+        name: 'SEO',
         level: 3,
       },
     ],

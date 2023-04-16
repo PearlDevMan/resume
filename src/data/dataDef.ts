@@ -91,6 +91,9 @@ export interface TimelineItem {
   location: string;
   title: string;
   content: JSX.Element;
+  trademark:  string | StaticImageData;
+  imageheight: string;
+  imagewidth: string;
 }
 
 /**

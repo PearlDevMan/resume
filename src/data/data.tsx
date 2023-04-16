@@ -26,6 +26,10 @@ import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
+import resumeImage3 from '../images/resume/AF_logo (1).png';
+import resumeImage1 from '../images/resume/Creighton_University_seal.svg.png';
+import resumeImage4 from '../images/resume/UNewHampshire_seal.jpg';
+import resumeImage2 from '../images/resume/UNewHampshire_seal.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -103,16 +107,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a system engineer. In my study, there are so many fields related to system engineering. 
+  Mainly, SAP and System Engineering is my Best Feature compared to others. And I can communicate with some Asian Customers by my language skill`,
   aboutItems: [
     {label: 'Location', text: '	Omaha,	New Hampshire', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'United State / Chinese', Icon: FlagIcon},
+    {label: 'Nationality', text: 'United State', Icon: FlagIcon},
     {label: 'Interests', text: 'Swimming, Karate, Climbing', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Advanced Fixtures Inc', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Study', text: 'University of New Hampshire', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Advanced Fixtures Inc', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -162,7 +165,7 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'System Security',
+        name: 'MicroSoft 365',
         level: 6,
       },
       {
@@ -199,15 +202,15 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Scaled Composites',
+    description: 'My First Development For Large Company.',
+    url: 'https://www.scaled.com/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Advanced Fixutures',
+    description: 'AFi is a wonderful company for web developer.',
+    url: 'https://advancedfixtures.com/',
     image: porfolioImage2,
   },
   {
@@ -269,43 +272,67 @@ export const portfolioItems: PortfolioItem[] = [
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
-export const education: TimelineItem[] = [
-  {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'March 2021 - Present',
+    location: 'Advanced Fixtures Inc',
+    title: 'System Manager',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
         anything else that would be useful for an employer to know.
       </p>
     ),
+    trademark: resumeImage3,
+    imageheight: '150px',
+    imagewidth: '150px'
   },
   {
-    date: 'March 2007 - February 2010',
+    date: 'March 2018 - February 2021',
     location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    title: 'Senior Web Developer',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
         anything else that would be useful for an employer to know.
       </p>
     ),
+    trademark: resumeImage4,
+    imageheight: '150px',
+    imagewidth: '150px'
+  },
+];
+
+export const educations: TimelineItem[] = [
+  {
+    date: 'April 2015',
+    location: 'University of New Hampshire',
+    title: 'Masters in System engineering',
+    content: (
+      <p>
+        In university days, I majored in System Engineering and studied about web development myself. 
+        When I was on research for graduation, I lead a development team which was formed by students and complete a project to impletenent SAP in a local business company named MyGoNorth.
+      </p>
+    ),
+    trademark: resumeImage2,
+    imageheight: '150px',
+    imagewidth: '150px'
+  },
+  {
+    date: 'March 2011',
+    location: 'Creighton University',
+    title: 'Bachelor in Business Administration',
+    content: (
+      <p>
+        I was in College of Business Administration and in every field of major, 
+        I showed good skills and enthusiasm. 
+        Especially, ERP and Database was always on my mind and I grew up those to my main skills.
+      </p>
+    ),
+    trademark: resumeImage1,
+    imageheight: '150px',
+    imagewidth: '150px'
   },
 ];
 
@@ -354,12 +381,12 @@ export const contact: ContactSection = {
     {
       type: ContactType.Instagram,
       text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      href: 'https://www.instagram.com/#',
     },
     {
       type: ContactType.Github,
       text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      href: 'https://github.com/PearlDevMan',
     },
   ],
 };
@@ -368,9 +395,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/tbakerx/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/PearlDevMan'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/#'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/#/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/#/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/#'},
 ];

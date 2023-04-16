@@ -28,7 +28,7 @@ import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import resumeImage3 from '../images/resume/AF_logo (1).png';
 import resumeImage1 from '../images/resume/Creighton_University_seal.svg.png';
-import resumeImage4 from '../images/resume/UNewHampshire_seal.jpg';
+import resumeImage4 from '../images/resume/deebecon.png';
 import resumeImage2 from '../images/resume/UNewHampshire_seal.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -48,8 +48,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Alexander | Resume',
-  description: "Resume about Alexander Davis as A Good SAP Engineer",
+  title: 'Araki | Resume',
+  description: "Resume about Araki Honda as A Good System/Data Engineer",
 };
 
 /**
@@ -73,12 +73,12 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Alexander Davis.`,
+  name: `I'm Araki Honda.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">SAP Engineer</strong>, currently working
-        at <strong className="text-stone-100">Advanced Fixtures Inc</strong> helping build a SAP CRM, SAP HANA, S/3 and Security.
+        I'm a Omaha based <strong className="text-stone-100">System/Data Engineer</strong>, currently working
+        at <strong className="text-stone-100">Advanced Fixtures Inc</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Swimming</strong>,
@@ -89,7 +89,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://docs.google.com/document/d/1jXKeEnvs4DqRC49Eu04oi32PZsJTKmlaLSNpQUNK0aU/edit',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
@@ -141,18 +141,18 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'SAP Engineer',
+    name: 'Data Engineer',
     skills: [
       {
-        name: 'CRM',
+        name: 'Data Analysis',
         level: 9,
       },
       {
-        name: 'HANA',
+        name: 'Data Visualizaion',
         level: 7,
       },
       {
-        name: 'Finance',
+        name: 'Database',
         level: 6,
       },
     ],
@@ -214,57 +214,57 @@ export const portfolioItems: PortfolioItem[] = [
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'AWS',
+    description: 'AWS is my favorite service in my DevOps role.',
+    url: 'https://aws.amazon.com/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'RAYMOND WEIL',
+    description: 'My most proud site in UI design.',
+    url: 'https://www.raymond-weil.com/en/',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Granata Olive',
+    description: 'Just 3 days work.',
+    url: 'http://granataolive.it/',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Coinhomes.io',
+    description: 'Cryptocurrency is a great creature in this century.',
+    url: 'https://CoinHomes.io',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Software Business Intelligence',
+    description: 'A trader want his/her own BI/UI.',
+    url: '',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Medical Software and Apss using Python and Data Science',
+    description: 'My IoT solution for Health Care .',
+    url: 'https://#',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'Realty Meter',
+    description: 'Realty Meter about for Mange sales, Transaction, Goal, Reports and also important thing is that customer pay online for process.',
+    url: 'https://realtymeter.com',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: "New Year's Miracle",
+    description: 'I had developed the personalized call order SPA site.',
+    url: 'https://zvonok.novogodnee-chudo.ru/',
     image: porfolioImage10,
   },
   {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://timbaker.me',
+    title: 'ROLZO',
+    description: 'React | Redux | Material-UI | Node | MySQL',
+    url: 'https://rolzo.com',
     image: porfolioImage11,
   },
 ];
@@ -290,7 +290,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'March 2018 - February 2021',
-    location: 'Garage Startup Studio',
+    location: 'DeeBeCon. Inc',
     title: 'Senior Web Developer',
     content: (
       <p>
@@ -344,17 +344,17 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      text: 'He is an expert in Azure, ML, Kubernetes and Dockers. It is very difficult to find an expert like him on DevOps and Azure services. Everything was very good!',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Osmel Burg',
+      text: 'The experience with Kashif was amazing. He is very professional and very fast. Is attentive to details and proposes practical solutions to problems. The relation quality/price is very fair too. I look forward to working with him on future projects. Recommend him 100%. Thanks very much for the experience Araki. Best Regards Osmel',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Baalwi Lee',
+      text: 'Excellent service until problem solved throughout the night. 5 stars',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -366,26 +366,26 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'You can send me Email using this form.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'bluedreamy123@skiff.com',
+      href: 'mailto:bluedreamy123@skiff.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Omaha NH, United State',
+      href: 'https://www.google.ca/maps/place/7615+Dodge+St,+Omaha,+NE+68114,+%D0%A1%D0%A8%D0%90/@41.259317,-96.0349636,17z/data=!4m10!1m2!2m1!1s7615+Dodge+St+Omaha,+NH+united+state!3m6!1s0x87938d0c3dce1dd1:0x20baf19cd1fe94e5!8m2!3d41.259317!4d-96.0323887!15sCiQ3NjE1IERvZGdlIFN0IE9tYWhhLCBOSCB1bml0ZWQgc3RhdGWSARFjb21wb3VuZF9idWlsZGluZ-ABAA!16s%2Fg%2F11bw4hg999',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
+      text: '@bluedreamy123',
       href: 'https://www.instagram.com/#',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
+      text: 'pearldevman',
       href: 'https://github.com/PearlDevMan',
     },
   ],
@@ -396,7 +396,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/PearlDevMan'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/#'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/#'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/#/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/#/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/#'},

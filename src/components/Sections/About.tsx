@@ -5,15 +5,19 @@ import {FC, memo} from 'react';
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
+
+
 const About: FC = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
+  const imageurl = "https://avatars.githubusercontent.com/u/128147754?v=4";
+  
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>
       <div className={classNames('grid grid-cols-1 gap-y-4', {'md:grid-cols-4': !!profileImageSrc})}>
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-24 w-24 overflow-hidden rounded-xl md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
+              <Image  alt="about-me-image" layout="fill" objectFit="cover" src={imageurl}/>
             </div>
           </div>
         )}
